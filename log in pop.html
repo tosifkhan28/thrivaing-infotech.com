@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/aa7454d09f.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .popup {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-content {
+        background-color: #f28c28;
+        padding: 1rem;
+        border-radius: 5px;
+        position: relative;
+        padding-bottom: 3rem;
+
+
+    }
+
+    form {
+        width: 45vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    form input {
+
+        margin: 15px;
+        display: block;
+        width: 50%;
+        padding: 8px;
+        border: 1.5px solid #ffffff;
+        background: none;
+        border-radius: 3px;
+        margin-bottom: 0.625rem;
+        font-size: 1.3rem;
+        color: white;
+    }
+
+    .popup-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .submit-button {
+        height: 80px;
+        width: 24vw;
+        margin: auto;
+        margin-top: 0.5rem;
+    }
+
+    .submit-button button {
+        background-color: transparent;
+    }
+
+    .button {
+        color: white;
+        text-decoration: none;
+        border: 1.4px solid #ffffff;
+        padding: 5px 15px;
+        border-radius: 3px;
+        color: #ffffff;
+        transition: 0.1s ease-in-out;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+
+    }
+
+    .button:hover {
+        background-color: #ffffff;
+        color: #f28c28;
+    }
+
+    form input::placeholder {
+        color: white;
+    }
+
+    .popup-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width:968px) {
+        form input {
+            width: 100%;
+        }
+
+        .submit-button {
+            width: 47vw;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 0 2rem;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        form input {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width:576px) {
+        form input {
+            width: 100%;
+        }
+
+        .submit-button {
+            width: 48vw;
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        form input {
+            width: 100%;
+            padding: 5px;
+        }
+
+        form {
+            width: 70vw;
+        }
+
+        .submit-button {
+            width: 48vw;
+        }
+    }
+
+    .get-call-button a {
+        background-color: #f28c28;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+        position: fixed;
+        transform: rotate(90deg);
+        top: 200px;
+        left: -55px;
+    }
+
+    .get-call-button {
+        position: relative;
+    }
+</style>
+
+<body>
+    <div class="get-call-button">
+        <a href="#" class="login" id="Login">Request A Call Back</a>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <h2 style="text-align: center;">Request A Call Back</h2>
+            <i class="fa-solid fa-xmark popup-close"></i>
+            <div class="popup-logo">
+                <img src="/img/logo name.png" width="250" alt="">
+            </div>
+            <form action="" onsubmit="emailSend(); reset(); return false;">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                <input type="text" id="phone" name="phone" placeholder="Enter Your Mobile Number" required>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+                <div class="submit-button">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        document.getElementById("Login").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "flex";
+        })
+        document.querySelector(".popup-close").addEventListener("click", function () {
+            document.querySelector(".popup").style.display = "none";
+        })
+
+
+        // Get the on the Email
+       function emailSend(){
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mdtosif386@gmail.com",
+    Password : "7F2F345C84F5A10A1A94B9FB05B92A997823",
+    To : 'mdtosif387@gmail.com',
+    From : "mdtosif386@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+       }
+    </script>
+</body>
+
+</html>

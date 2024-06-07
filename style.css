@@ -1361,3 +1361,26 @@ footer {
     }
   }
 }
+
+.get-call-button a {
+    background-color: #f28c28;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    position: fixed;
+    top: 355px;
+    left: -30px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(90deg);
+  }
+  .borkers {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .borkers img{
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+  }

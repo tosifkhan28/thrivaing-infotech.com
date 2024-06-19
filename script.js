@@ -35,6 +35,6 @@ const slideCarousel = (index) => {
 }
 
 
-
+// BANK DEATIALS POPUP
 
 

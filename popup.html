@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>How to Make a Popup</title>
+    <script defer src="app.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+    <div class="container-popup">
+      <div class="popup" id="popup">
+        <h1>HDFC BANK</h1>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HDFC_Bank_Logo.svg/2560px-HDFC_Bank_Logo.svg.png"
+          alt=""
+        />
+        <h3>Account Number : <span>50200097775712</span></h3>
+        <h3>IFSC CODE : <span>HDFC0001240</span></h3>
+        <h3>BRANCH : <span>Racecourse</span></h3>
+        <button type="button" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <script>
+      let popup = document.getElementById("popup");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>

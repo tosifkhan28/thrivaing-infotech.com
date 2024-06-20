@@ -568,6 +568,34 @@ AItrdg"
         </p>
       </div>
     </footer>
+
+    <!-- Bank Payment -->
+    <section class="Payment-home">
+      <button type="submit" class="btn-1" onclick="openPopup()">Payment</button>
+      <div class="container-popup">
+        <div class="payment" id="payment">
+          <img
+            src="img/WhatsApp Image 2024-06-19 at 18.43.32_ff1a7009.jpg"
+            alt=""
+          />
+
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+
+      <!-- Java Script -->
+      <script>
+        let popup = document.getElementById("payment");
+
+        function openPopup() {
+          popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    </section>
     <!-- Log in -->
     <div class="get-call-button">
       <a
@@ -578,15 +606,6 @@ AItrdg"
       >
     </div>
 
-    <!-- Whatsapp logo -->
-    <div class="whatsapp">
-      <a href="https://wa.link/tl7cjm"
-        ><i
-          class="fa-brands fa-square-whatsapp"
-          style="color: #25d366; font-size: 3rem"
-        ></i
-      ></a>
-    </div>
     <!-- Bank Details -->
     <div class="container-popup">
       <div class="popup" id="popup">

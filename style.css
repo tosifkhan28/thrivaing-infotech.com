@@ -1413,26 +1413,10 @@ footer {
     color: white;
     width: 120px;
     position: fixed;
-    top: 345px;
+    top: 355px;
     left: -30px;
     text-align: center;
     text-decoration: none;
-    transform: rotate(90deg);
-}
-
-.payment button {
-    background-color: #f28c28;
-    padding: 13px 15px;
-    text-decoration: none;
-    color: white;
-    width: 120px;
-    position: fixed;
-    top: 480px;
-    cursor: pointer;
-    left: -30px;
-    text-align: center;
-    text-decoration: none;
-    border: none;
     transform: rotate(90deg);
 }
 
@@ -1499,9 +1483,8 @@ footer {
 
 /* POPUP Window */
 .popup {
-    width: 100vw;
-    height: 100vh;
-    background: #0000009c;
+    background-color: #0000005e;
+    opacity: 1;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -1513,7 +1496,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 30px 60px;
+    padding: 150px 100px 150px;
     color: #333;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
@@ -1526,8 +1509,7 @@ footer {
 }
 
 .popup img {
-    width: 50vh;
-    height: 100vh;
+    width: 320px;
 }
 
 .popup h2 {
@@ -1545,7 +1527,7 @@ footer {
 }
 
 .popup button {
-    width: 300px;
+    width: 350px;
     margin-top: 30px;
     padding: 10px 0;
     background-color: var(--primarycolor);
@@ -1555,4 +1537,81 @@ footer {
     font-size: 18px;
     border-radius: 4px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Main Home Fixed Payment mode */
+.payment {
+    background-color: #0000005e;
+    opacity: 1;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 150px 100px 150px;
+    color: #333;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.payment img {
+    width: 320px;
+}
+
+.payment h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.bank-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment button {
+    width: 350px;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #f28c28;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-1 {
+    background-color: #f28c28;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    position: fixed;
+    top: 500px;
+    font-family: var();
+    left: -30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(90deg);
 }

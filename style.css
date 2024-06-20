@@ -1413,10 +1413,26 @@ footer {
     color: white;
     width: 120px;
     position: fixed;
-    top: 355px;
+    top: 345px;
     left: -30px;
     text-align: center;
     text-decoration: none;
+    transform: rotate(90deg);
+}
+
+.payment button {
+    background-color: #f28c28;
+    padding: 13px 15px;
+    text-decoration: none;
+    color: white;
+    width: 120px;
+    position: fixed;
+    top: 480px;
+    cursor: pointer;
+    left: -30px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
     transform: rotate(90deg);
 }
 
@@ -1483,9 +1499,9 @@ footer {
 
 /* POPUP Window */
 .popup {
-    width: 400px;
-    background: #fff;
-    border: 2px solid var(--primarycolor);
+    width: 100vw;
+    height: 100vh;
+    background: #0000009c;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -1510,7 +1526,8 @@ footer {
 }
 
 .popup img {
-    width: 200px;
+    width: 50vh;
+    height: 100vh;
 }
 
 .popup h2 {
@@ -1528,7 +1545,7 @@ footer {
 }
 
 .popup button {
-    width: 100%;
+    width: 300px;
     margin-top: 30px;
     padding: 10px 0;
     background-color: var(--primarycolor);

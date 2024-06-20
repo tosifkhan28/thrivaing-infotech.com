@@ -294,6 +294,33 @@
 
 
     </script>
+     <!-- Bank Payment -->
+     <section class="Payment-home">
+      <button type="submit" class="btn-1" onclick="openPopup()">Payment</button>
+      <div class="container-popup">
+        <div class="payment" id="payment">
+          <img
+            src="img/WhatsApp Image 2024-06-19 at 18.43.32_ff1a7009.jpg"
+            alt=""
+          />
+
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+
+      <!-- Java Script -->
+      <script>
+        let popup = document.getElementById("payment");
+
+        function openPopup() {
+          popup.classList.add("open-popup");
+        }
+
+        function closePopup() {
+          popup.classList.remove("open-popup");
+        }
+      </script>
+    </section>
     <script src="/script.js"></script>
 </body>
 

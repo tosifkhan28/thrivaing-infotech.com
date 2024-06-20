@@ -1496,7 +1496,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 150px 100px 150px;
+    padding: 0 30px 60px;
     color: #333;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
@@ -1509,7 +1509,7 @@ footer {
 }
 
 .popup img {
-    width: 320px;
+    width: 250px;
 }
 
 .popup h2 {
@@ -1527,7 +1527,7 @@ footer {
 }
 
 .popup button {
-    width: 350px;
+    width: 300px;
     margin-top: 30px;
     padding: 10px 0;
     background-color: var(--primarycolor);
@@ -1556,7 +1556,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 150px 100px 150px;
+    padding: 0 30px 60px;
     color: #333;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
@@ -1569,7 +1569,7 @@ footer {
 }
 
 .payment img {
-    width: 320px;
+    width: 250px;
 }
 
 .payment h2 {
@@ -1587,7 +1587,7 @@ footer {
 }
 
 .payment button {
-    width: 350px;
+    width: 300px;
     margin-top: 30px;
     padding: 10px 0;
     background-color: #f28c28;

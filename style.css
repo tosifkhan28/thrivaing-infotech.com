@@ -666,7 +666,7 @@ footer {
     color: var(--white);
 }
 
-@media screen and (min-width:700px) {}
+
 
 
 /* Contact page */
@@ -1031,7 +1031,6 @@ footer {
         max-width: 97%;
         margin-bottom: 10px;
     }
-
 }
 
 
@@ -1614,4 +1613,35 @@ footer {
     text-align: center;
     text-decoration: none;
     transform: rotate(90deg);
+}
+
+@media screen and (max-width:768px) {
+
+    .payment img,
+    .popup img {
+        width: 200px;
+    }
+
+    .payment,
+    .popup {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .payment img,
+    .popup img {
+        width: 200px;
+    }
+
+    .payment,
+    .popup {
+        padding: 0;
+    }
+
+    .payment button,
+    .popup button {
+        width: 250px;
+    }
 }

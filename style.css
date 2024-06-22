@@ -1432,11 +1432,8 @@ footer {
 
 .whatsapp a {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    display: flex;
-    justify-content: flex-end;
-    /* background-color: red; */
+    bottom: 20px;
+    right: 20px;
 }
 
 .chart-section {
@@ -1481,7 +1478,8 @@ footer {
 
 /* POPUP Window */
 .popup {
-    background-color: #0000005e;
+    background-color: #0000006d;
+    padding: 0 30px 60px;
     opacity: 1;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -1494,20 +1492,19 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 30px 60px;
-    color: #333;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
 }
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%) scale(1);
 }
 
 .popup img {
-    width: 250px;
+    width: 350px;
+    border-radius: 4px;
 }
 
 .popup h2 {
@@ -1525,10 +1522,10 @@ footer {
 }
 
 .popup button {
-    width: 300px;
-    margin-top: 30px;
+    width: 350px;
+    margin-top: 10px;
     padding: 10px 0;
-    background-color: var(--primarycolor);
+    background-color: #f28c28;
     color: #fff;
     border: 0;
     outline: none;
@@ -1541,7 +1538,7 @@ footer {
 
 /* Main Home Fixed Payment mode */
 .payment {
-    background-color: #0000005e;
+    background-color: #0000006d;
     opacity: 1;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
@@ -1550,24 +1547,24 @@ footer {
     top: 110%;
     left: 50%;
     display: flex;
+    padding: 0 30px 60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 30px 60px;
-    color: #333;
     visibility: hidden;
     transition: all 0.4s ease-in-out;
 }
 
 .open-popup {
     visibility: visible;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%) scale(1);
 }
 
 .payment img {
-    width: 250px;
+    width: 350px;
+    border-radius: 4px;
 }
 
 .payment h2 {
@@ -1576,17 +1573,9 @@ footer {
     margin: 30px 0 10px;
 }
 
-.bank-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
 .payment button {
-    width: 300px;
-    margin-top: 30px;
+    width: 350px;
+    margin-top: 20px;
     padding: 10px 0;
     background-color: #f28c28;
     color: #fff;
@@ -1618,12 +1607,13 @@ footer {
 
     .payment img,
     .popup img {
-        width: 200px;
+        width: 350px;
     }
 
     .payment,
     .popup {
-        padding: 0;
+        width: 240px;
+        background: transparent;
     }
 }
 
@@ -1631,16 +1621,17 @@ footer {
 
     .payment img,
     .popup img {
-        width: 200px;
+        width: 280px;
     }
 
     .payment,
     .popup {
-        padding: 0;
+        width: 20vw;
+        background: transparent;
     }
 
     .payment button,
     .popup button {
-        width: 250px;
+        width: 280px;
     }
 }
